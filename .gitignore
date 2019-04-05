@@ -3,6 +3,7 @@ out/
 
 .idea
 .idea/
+*.iml
 
 *.class
 *.log
