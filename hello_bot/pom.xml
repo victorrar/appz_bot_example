@@ -28,29 +28,41 @@
         </dependency>
     </dependencies>
 
-
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.3.2</version>
-                <executions>
-                    <execution>
-<!--                        <phase>compile</phase>-->
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <configuration>
-                            <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>
-<!--                            <arguments>-->
-<!--                                <argument>ActsHalushkoBot</argument>-->
-<!--                                <argument>760440337:AAFgip-UqiqlaJxkbenzOZvwKaEdtR7BP7I</argument>-->
-<!--                            </arguments>-->
-                        </configuration>
-                    </execution>
-                </executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>exec-maven-plugin</artifactId>-->
+<!--                <version>1.3.2</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--&lt;!&ndash;                        <phase></phase>&ndash;&gt;-->
+<!--                        <goals>-->
+<!--                            <goal>java</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>-->
+<!--&lt;!&ndash;                            <arguments>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <argument>ActsHalushkoBot</argument>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <argument>760440337:AAFgip-UqiqlaJxkbenzOZvwKaEdtR7BP7I</argument>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </arguments>&ndash;&gt;-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 </project>
