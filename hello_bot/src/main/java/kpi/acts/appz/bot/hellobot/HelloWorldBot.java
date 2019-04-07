@@ -1,5 +1,7 @@
-package kpi.acts.appz.bot;
+package kpi.acts.appz.bot.hellobot;
 
+import kpi.acts.appz.bot.Bot;
+import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
 public final class HelloWorldBot extends Bot {
@@ -7,7 +9,8 @@ public final class HelloWorldBot extends Bot {
         if(args == null || args.length != 2){
             System.out.println("You must run bot with 2 args - BotToken and bot UserName");
         } else {
-            runBot(new HelloWorldBot(args[0], args[1]));
+            ApiContextInitializer.init();
+            Bot.runBot(new HelloWorldBot(args[0], args[1]));
         }
     }
 

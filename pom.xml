@@ -11,19 +11,12 @@
 
     <modules>
         <module>telegram_bot</module>
+        <module>hello_bot</module>
     </modules>
 
     <properties>
         <telegram.version>4.1</telegram.version>
     </properties>
-
-<!--    <dependencies>-->
-<!--        <dependency>-->
-<!--            <groupId>org.telegram</groupId>-->
-<!--            <artifactId>telegrambots</artifactId>-->
-<!--            <version>${telegram.version}</version>-->
-<!--        </dependency>-->
-<!--    </dependencies>-->
 
     <build>
         <plugins>
