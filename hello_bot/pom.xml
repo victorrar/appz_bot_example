@@ -8,9 +8,10 @@
         <groupId>kpi.acts</groupId>
         <artifactId>parent</artifactId>
         <version>2019.1</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>hello_bot</artifactId>
+    <artifactId>kpi.acts.hello_bot</artifactId>
     <version>2019.1</version>
 
     <dependencies>
