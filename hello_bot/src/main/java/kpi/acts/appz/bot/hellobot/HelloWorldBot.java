@@ -21,6 +21,7 @@ public final class HelloWorldBot extends Bot {
     @Override
     protected void processTheException(Exception e) {
         e.printStackTrace();
+        System.out.println(e.toString());
     }
 
     @Override
