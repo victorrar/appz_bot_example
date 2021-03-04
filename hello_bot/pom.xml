@@ -44,6 +44,10 @@
                 <version>3.0.0</version>
                 <configuration>
                     <mainClass>kpi.acts.appz.bot.hellobot.HelloWorldBot</mainClass>
+                    <arguments>
+                        <argument>682878716:AAF3OLGa12nY1HEMjIux3dJjzULh6BuWx2E</argument>
+                        <argument>KolaCationBot</argument>
+                    </arguments>
                 </configuration>
             </plugin>
         </plugins>
